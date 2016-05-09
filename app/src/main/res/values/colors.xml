@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--App Primary Color-->
+    <color name="colorPrimary">#114A78</color>
+    <color name="colorPrimaryDark">#0C3D64</color>
+    <color name="colorAccent">#3396E0</color>
+
+    <color name="bg_edit_text">#EFF3F7</color>
+    <color name="bg_login">#0064AD</color>
+    <color name="bg_login_dark">#0059ad</color>
+    <color name="bg_register">#3396E0</color>
+    <color name="bg_register_dark">#338ae0</color>
+    <color name="transparent">#00000000</color>
+    <color name="blue_transparent">#553396E0</color>
+    <color name="keypad_light_gray">#c9c9c9</color>
+    <color name="chat_bubble">#edf1f6</color>
+
+    <color name="bg_green">#4AB48B</color>
+    <color name="bg_green_dark">#2fa376</color>
+
+    <color name="fab_color">#F24C30</color>
+    <color name="fab_pressed">#FFF23D30</color>
+
+    <color name="txt_light">#7C858E</color>
+    <color name="txt_dark">#111</color>
+
+    <color name="divider">#c9c9c9</color>
+
+    <item name="blue" type="color">#FF33B5E5</item>
+    <item name="purple" type="color">#FFAA66CC</item>
+    <item name="green" type="color">#FF99CC00</item>
+    <item name="orange" type="color">#FFFFBB33</item>
+    <item name="red" type="color">#FFFF4444</item>
+    <item name="darkblue" type="color">#FF0099CC</item>
+    <item name="darkpurple" type="color">#FF9933CC</item>
+    <item name="darkgreen" type="color">#FF669900</item>
+    <item name="darkorange" type="color">#FFFF8800</item>
+    <item name="darkred" type="color">#FFCC0000</item>
+    <item name="white" type="color">#FFFFFF</item>
+    <item name="titleblue" type="color">#0C3D64</item>
+    <item name="selectedyellow" type="color">#fff800</item>
+    <item name="lightgray" type="color">#D3D3D3</item>
+    <item name="gray" type="color">#808080</item>
+    <item name="black" type="color">#000000</item>
+    <item name="lighterblue" type="color">#305a94</item>
+    <item name="transparentblack" type="color">#55000000</item>
+    <item name="lightertransblack" type="color">#11000000</item>
+    <item name="darkertransblack" type="color">#88000000</item>
+    <item name="lightertranswhite" type="color">#22FFFFFF</item>
+    <item name="darkerlightertranswhite" type="color">#44FFFFFF</item>
+</resources>

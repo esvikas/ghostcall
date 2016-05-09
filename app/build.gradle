@@ -1,0 +1,61 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.kickbackapps.ghostcall"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 14
+        versionName "1.1.1"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+
+    jcenter()
+    maven { url "https://jitpack.io" }
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':pjsuamodule')
+    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile 'com.google.android.gms:play-services-gcm:7.8.0'
+    compile 'com.android.support:design:22.2.0'
+    compile 'com.android.support:cardview-v7:22.2.0'
+    compile 'com.melnykov:floatingactionbutton:1.3.0'
+    compile project(':retrofit-1.9.0')
+    compile project(':libphonenumber-7.0.8')
+    compile project(':gson-2.3.1')
+    compile 'com.lsjwzh:materialloadingprogressbar:0.5.8-RELEASE'
+    compile project(':numberprogressbar')
+    compile project(':calligraphy-2.1.0')
+    compile 'net.danlew:android.joda:2.8.1'
+    compile 'org.adw.library:discrete-seekbar:1.0.0'
+    compile 'com.skyfishjy.ripplebackground:library:1.0.1'
+    compile 'com.squareup.okhttp:okhttp:2.5.0'
+    compile('com.crashlytics.sdk.android:crashlytics:2.5.5@aar') {
+        transitive = true;
+    }
+}

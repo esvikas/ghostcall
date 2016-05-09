@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigationModel
+  ns = "http://schemas.android.com?import=com.android.tools.idea.editors.navigation.model.*">
+  <locations  
+    class = "java.util.ArrayList">
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.kickbackapps.ghostcall.ui.VerificationScreen"/>
+      <point      
+        x = "3076"      
+        y = "1060"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.MenuState"      
+        className = "com.kickbackapps.ghostcall.ui.VerificationScreen"/>
+      <point      
+        x = "4925"      
+        y = "849"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.kickbackapps.ghostcall.ui.StartScreen"/>
+      <point      
+        x = "1746"      
+        y = "70"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.MenuState"      
+        className = "com.kickbackapps.ghostcall.ui.StartScreen"/>
+      <point      
+        x = "1768"      
+        y = "104"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.kickbackapps.ghostcall.ui.CallScreen"/>
+      <point      
+        x = "2813"      
+        y = "3835"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.kickbackapps.ghostcall.ui.GetGhostNumberScreen"/>
+      <point      
+        x = "4209"      
+        y = "3827"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.kickbackapps.ghostcall.ui.TourScreen"/>
+      <point      
+        x = "506"      
+        y = "62"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.MenuState"      
+        className = "com.kickbackapps.ghostcall.ui.TourScreen"/>
+      <point      
+        x = "2788"      
+        y = "108"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.kickbackapps.ghostcall.ui.SelectPackageScreen"/>
+      <point      
+        x = "6602"      
+        y = "3071"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.kickbackapps.ghostcall.ui.HistorySettingsScreen"/>
+      <point      
+        x = "1223"      
+        y = "4404"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.kickbackapps.ghostcall.ui.HistoryScreen"/>
+      <point      
+        x = "296"      
+        y = "2338"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.kickbackapps.ghostcall.CallHistoryScreen"/>
+      <point      
+        x = "424"      
+        y = "868"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.MenuState"      
+        className = "com.kickbackapps.ghostcall.ui.CodeVerificationScreen"/>
+      <point      
+        x = "1768"      
+        y = "1480"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.kickbackapps.ghostcall.ui.CodeVerificationScreen"/>
+      <point      
+        x = "4606"      
+        y = "1067"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.kickbackapps.ghostcall.ui.HomeScreen"/>
+      <point      
+        x = "6851"      
+        y = "0"/>
+    </statePointEntry>
+  </locations>
+</navigationModel>

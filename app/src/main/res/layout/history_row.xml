@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:padding="@dimen/xLarge">
+
+        <TextView
+            android:id="@+id/historyNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(201) 241-3897"
+            android:textColor="@color/txt_dark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/historyDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:text="This is a text message"
+            android:textColor="@color/txt_light"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/ivArrow"
+        android:layout_toStartOf="@+id/ivArrow"
+        android:orientation="vertical"
+        android:padding="@dimen/xLarge">
+
+        <TextView
+            android:id="@+id/historyDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jun 30"
+            android:textColor="@color/keypad_light_gray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/historyTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="05:17pm"
+            android:textColor="@color/keypad_light_gray"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:src="@drawable/side_arrow" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/xLarge"
+        android:background="@color/divider" />
+
+    <!--<RelativeLayout
+        android:id="@+id/historyContentHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/xLarge">
+
+        &lt;!&ndash;<ImageView
+            android:id="@+id/historyStatusImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/sms_history" />
+
+        <RelativeLayout
+            android:id="@+id/loadingPanel"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="15dp"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/spinProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true" />
+        </RelativeLayout>&ndash;&gt;
+
+
+
+    </RelativeLayout>-->
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingPrefix">
+
+    <RelativeLayout
+        android:id="@+id/gridContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_item_background"
+        android:padding="@dimen/small">
+
+        <ImageView
+            android:id="@+id/bgImageGrid"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:src="@drawable/park" />
+
+        <TextView
+            android:id="@+id/background_name"
+            fontPath="fonts/helveticaneue_light.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bgImageGrid"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/small"
+            android:singleLine="true"
+            android:text="Name"
+            android:textColor="@color/txt_dark" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

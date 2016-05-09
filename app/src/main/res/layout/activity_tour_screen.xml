@@ -1,0 +1,61 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartScreen">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.kickbackapps.ghostcall.ViewPagerIndicator
+        android:layout_gravity="bottom|center_horizontal"
+        android:id="@+id/ratingBar"
+        android:layout_marginBottom="@dimen/tutorial_indicator_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/indicator_size"
+        android:layout_marginTop="@dimen/horizontal_padding"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="Get Started"
+            android:id="@+id/skipButton"
+            android:textColor="@color/white"
+            android:background="#44FFFFFF"
+            android:visibility="invisible"
+            />
+
+        <View android:layout_width="0dp" android:layout_height="1dp"
+            android:layout_weight="0.1" />
+
+        <!--<Button-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:text="@string/next"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:id="@+id/actionButton"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="#22FFFFFF"-->
+            <!--/>-->
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</FrameLayout>

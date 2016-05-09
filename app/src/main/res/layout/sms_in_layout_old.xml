@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/xSmall"
+    android:paddingLeft="@dimen/small"
+    android:paddingRight="@dimen/small"
+    android:paddingTop="@dimen/xSmall">
+
+    <TextView
+        android:id="@+id/message_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/avatarView"
+        android:layout_toRightOf="@+id/avatarView"
+        android:background="@drawable/message_in_old"
+        android:gravity="center_vertical"
+        android:text="test messages" />
+
+    <ImageView
+        android:id="@+id/avatarView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/people_blue"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/date_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="Aug 22, 01:30 AM"
+        android:textColor="@color/divider"
+        android:visibility="gone" />
+
+</RelativeLayout>

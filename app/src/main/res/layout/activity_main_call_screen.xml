@@ -1,0 +1,705 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kickbackapps.ghostcall.ui.CallScreen"
+    tools:ignore="MissingPrefix">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/topButtonsHolder"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/toolbar"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/bgHolder"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:padding="@dimen/small">
+
+            <com.kickbackapps.ghostcall.autofittext.AutofitTextView
+                android:id="@+id/bgText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="BG Noise"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/effectsHolder"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:padding="@dimen/small">
+
+            <com.kickbackapps.ghostcall.autofittext.AutofitTextView
+                android:id="@+id/effectsText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Sound FX"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vcHolder"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:padding="@dimen/small">
+
+            <com.kickbackapps.ghostcall.autofittext.AutofitTextView
+                android:id="@+id/vcText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Voice"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/vcLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/cvCloseButton"
+        android:layout_below="@id/topButtonsHolder"
+        android:padding="@dimen/xLarge"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/icMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/male" />
+
+        <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+            android:id="@+id/voiceSeekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/icFemale"
+            android:layout_toRightOf="@+id/icMale"
+            android:layout_toStartOf="@+id/icFemale"
+            android:layout_weight="1"
+            app:dsb_indicatorColor="#1d375a"
+            app:dsb_max="5"
+            app:dsb_min="-5"
+            app:dsb_progressColor="@color/bg_register"
+            app:dsb_trackColor="#e0e8ef" />
+
+        <ImageView
+            android:id="@+id/icFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/female" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/content_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topButtonsHolder"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/centerImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ghost" />
+
+            <com.kickbackapps.ghostcall.customview.dottedprogressbar.DottedProgressBar
+                android:id="@+id/progress"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/xSmall"
+                android:paddingTop="@dimen/xLarge"
+                android:visibility="gone"
+                app:activeDot="@color/txt_dark"
+                app:dotSize="10dp"
+                app:inactiveDot="@color/divider"
+                app:jumpingSpeed="400"
+                app:spacing="5dp" />
+
+            <TextView
+                fontPath="fonts/helveticaneue_light.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/medium"
+                android:gravity="center"
+                android:text="Calling..." />
+
+            <TextView
+                android:id="@+id/tvNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/medium"
+                android:text="Number" />
+
+            <Button
+                android:id="@+id/speakerToggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_background_register"
+                android:text="Turn Speaker On"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <com.melnykov.fab.FloatingActionButton
+            android:id="@+id/hangupButton"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_end_call"
+            app:fab_colorNormal="@color/fab_color"
+            app:fab_colorPressed="@color/fab_pressed"
+            app:fab_colorRipple="@color/gray" />
+
+    </RelativeLayout>
+
+    <!--<com.skyfishjy.library.RippleBackground
+        android:id="@+id/content_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:rb_color="#3cefffff"
+        app:rb_duration="3000"
+        app:rb_radius="32dp"
+        app:rb_rippleAmount="4"
+        app:rb_scale="6">
+
+        <ImageView
+            android:id="@+id/centerImage"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/phone_loading_blue" />
+    </com.skyfishjy.library.RippleBackground>-->
+
+    <RelativeLayout
+        android:id="@+id/dialpadLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/cvCall"
+        android:layout_below="@+id/topButtonsHolder"
+        android:background="@color/white"
+        android:padding="@dimen/xLarge"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tvInputNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/bg_edittext"
+            android:ellipsize="start"
+            android:ems="15"
+            android:gravity="center"
+            android:hint="Enter number"
+            android:maxLength="12"
+            android:padding="@dimen/medium"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tvInputNumber"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_one"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_number"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@android:style/TextAppearance.Large"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/number_one"
+                        android:textColor="@color/bg_register" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/voicemail" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_two"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_number"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@android:style/TextAppearance.Large"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/number_two"
+                        android:textColor="@color/bg_register" />
+
+                    <TextView
+                        style="@android:style/TextAppearance.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ABC"
+                        android:textColor="@color/keypad_light_gray"
+                        android:textSize="@dimen/txt_small" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_three"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_number"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@android:style/TextAppearance.Large"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/number_three"
+                        android:textColor="@color/bg_register" />
+
+                    <TextView
+                        style="@android:style/TextAppearance.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DEF"
+                        android:textColor="@color/keypad_light_gray"
+                        android:textSize="@dimen/txt_small" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_four"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_number"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@android:style/TextAppearance.Large"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/number_four"
+                        android:textColor="@color/bg_register" />
+
+                    <TextView
+                        style="@android:style/TextAppearance.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GHI"
+                        android:textColor="@color/keypad_light_gray"
+                        android:textSize="@dimen/txt_small" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_five"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_number"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onClick"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@android:style/TextAppearance.Large"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/number_five"
+                        android:textColor="@color/bg_register" />
+
+                    <TextView
+                        style="@android:style/TextAppearance.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="JKL"
+                        android:textColor="@color/keypad_light_gray"
+                        android:textSize="@dimen/txt_small" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_six"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_number"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@android:style/TextAppearance.Large"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/number_six"
+                        android:textColor="@color/bg_register" />
+
+                    <TextView
+                        style="@android:style/TextAppearance.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MNO"
+                        android:textColor="@color/keypad_light_gray"
+                        android:textSize="@dimen/txt_small" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_seven"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_number"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@android:style/TextAppearance.Large"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/number_seven"
+                        android:textColor="@color/bg_register" />
+
+                    <TextView
+                        style="@android:style/TextAppearance.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PQRS"
+                        android:textColor="@color/keypad_light_gray"
+                        android:textSize="@dimen/txt_small" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_eight"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_number"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@android:style/TextAppearance.Large"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/number_eight"
+                        android:textColor="@color/bg_register" />
+
+                    <TextView
+                        style="@android:style/TextAppearance.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TUV"
+                        android:textColor="@color/keypad_light_gray"
+                        android:textSize="@dimen/txt_small" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_nine"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_number"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@android:style/TextAppearance.Large"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/number_nine"
+                        android:textColor="@color/bg_register" />
+
+                    <TextView
+                        style="@android:style/TextAppearance.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="WXYZ"
+                        android:textColor="@color/keypad_light_gray"
+                        android:textSize="@dimen/txt_small" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_contact"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_number"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:orientation="vertical">
+
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/contact" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_zero"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_number"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@android:style/TextAppearance.Large"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/number_zero"
+                        android:textColor="@color/bg_register" />
+
+                    <TextView
+                        style="@android:style/TextAppearance.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        android:textColor="@color/keypad_light_gray" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_delete"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_number"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/cancel" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:padding="@dimen/xLarge">
+
+        <Button
+            android:id="@+id/makeCallButton"
+            fontPath="fonts/helveticaneue_light.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ripple_background_register"
+            android:text="Send Call"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvCloseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:padding="@dimen/xLarge"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/closeVCButton"
+            fontPath="fonts/helveticaneue_light.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ripple_background_register"
+            android:text="Close"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </android.support.v7.widget.CardView>
+
+    <GridView
+        android:id="@+id/bgLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/cvCloseButton"
+        android:layout_below="@id/topButtonsHolder"
+        android:gravity="center_horizontal"
+        android:listSelector="#00000000"
+        android:numColumns="3"
+        android:visibility="gone" />
+
+    <GridView
+        android:id="@+id/effectsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/cvCloseButton"
+        android:layout_below="@id/topButtonsHolder"
+        android:gravity="center_horizontal"
+        android:listSelector="#00000000"
+        android:numColumns="3"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/spinnerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="#55000000"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

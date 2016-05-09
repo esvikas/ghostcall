@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GhostCall</string>
+    <string name="ghostcall_title">ghostcall</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_tour_screen"></string>
+    <string name="title_activity_verification_screen"></string>
+
+    <!--Nav Items-->
+    <string name="create_ghost_number">Create Ghost Number</string>
+    <string name="buy_credits">Buy Credits</string>
+    <string name="phone_book">Phonebook</string>
+    <string name="faq_support">FAQ / Support</string>
+    <string name="about_us">About us</string>
+    <string name="logout">Logout</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_code_verification_screen"></string>
+    <string name="take_tour">Take Tour</string>
+    <string name="get_started">Get Started</string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="verify_number">Verify your number</string>
+    <string name="numbers_only">*US &amp; Canada numbers only.</string>
+    <string name="done">Verify</string>
+    <string name="route_text">Ghost Call routes calls to your number while keeping it private. You can also send calls from your real number if you want.</string>
+    <string name="code_verification">Code Verification</string>
+    <string name="title_activity_home_screen">GhostCall</string>
+    <string name="your_number">Your Number</string>
+    <string name="title_activity_get_ghost_number_screen">GhostCall</string>
+    <string name="title_activity_select_package_screen">GhostCall</string>
+    <string name="title_activity_call_history_screen">GhostCall</string>
+    <string name="title_activity_history_screen">GhostCall</string>
+    <string name="title_activity_call_screen">GhostCall</string>
+    <string name="title_activity_history_settings_screen">GhostCall</string>
+    <string name="loading">Loading</string>
+    <string name="agree_to_terms"> \n By verifying your number, you agree to our </string>
+    <string name="terms_of_service"> \n \n <u>Terms of Service</u></string>
+
+    <string name="terms_message">The following sets forth the terms of use (the "Terms") for the website located at www.Ghost Call.com (the "Site") and all services provided via the Site, including but not limited to (the "Services" and together with the Site "Ghost Call").
+        \n\n
+        By using Ghost Call , you are consenting to these Terms. Ghost Call , LLC (the "Company") may modify, alter or update these Terms at any time without prior notice, and your subsequent use of Ghost Call shall constitute your consent to the modification, alteration or update.
+        \n\n
+        <b>Use of Ghost Call</b>
+        \n\n
+You are fully accountable for the messages you send through Ghost Call.
+        \n\n
+You agree to indemnify and hold harmless the Company and its affiliates, related parties, officers, directors, employees, agents, independent contractors, advertisers, partners, and co-branders, from any claim or demand, including reasonable attorney\'s fees, that may be made by any third party, due to or arising out of your use of Ghost Call.
+\n\n
+Ghost Call is provided as on an as is basis for the entertainment of its customers and users. Ghost Call is solely for use by persons 18 years of age or older. By using Ghost Call you affirm that you are at least 18 years of age.
+\n\n
+You are permitted to access the Site and the Service solely for the purpose of receiving information about the Company, its business and products, purchasing and utilizing the Service, communicating with the Company, and as otherwise as stated on the Site.
+\n\n
+You are responsible for using Ghost Call in a manner that conforms to your local laws. You are strictly prohibited from using Ghost Call to call emergency lines, health care facilities, government agencies, employees or officials, law enforcement, schools, numbers assigned to radio common carrier services, any service for which the called party is charged for the call, or any other call recipient that is prohibited by law or regulation, unless the call is made with the prior express consent of the called party. Those using this site for prohibited purposes may be subject to certain identification requirements and prosecution.
+\n\n
+    <b>No Harassment</b>
+\n\n
+YOU ARE STRICTLY PROHIBITED FROM USING Ghost Call TO THREATEN, ANNOY, OR HARASS ANY PERSON. You are not permitted to use, and hereby agree to refrain from using, Ghost Call in violation of any municipal, state, federal or other applicable law, including but not limited to 47 U.S.C. section 223, which makes it a crime to make anonymous or repeated phone calls with an intent to annoy or harass.
+    \n\n
+        <b>Intellectual Property</b>
+\n\n
+Ghost Call, the domain name(s) associated with the Site and all content, materials, copyrights, trademarks, technology, patents, trade secrets and other proprietary rights of Ghost Call (the "Intellectual Property") are the sole property of the Company and all rights therein are reserved.
+\n\n
+You may not copy, modify, reproduce, retransmit, reverse engineer or otherwise utilize the Intellecutal Property in any fashion or for any purpose other than set forth herein without the express written permission of the Company. You may only link to the Site for the purpose of directing other users to the Site, and must remove any link to the Site immediately on request from the Company.
+\n\n
+Ghost Call may at its option provide you with one or more areas within the Site for online discussions (e.g. message boards, wikis, chat rooms or blogs). Should you choose to participate in such a forum, you agree not to utilize the forum for illegal, immoral or inappropriate purposes. The Company reserves the right but will not be obligated to edit or delete postings to its forums at any time and for any reason.
+\n\n
+You are responsible for all content posted by you (the "User Content") and The Company shall have no responsibility or liability therefor. You hereby grant the Company a worldwide, perpetual, non-exclusive, transferable, fully paid-up license to use, copy, perform, or revise any User Content, including but not limited to any forum posts you may create. In connection with such User Content, you warrant and represent that you have all rights, title and interests necessary to provide such User Content that User Content shall not infringe any third party\’s rights of any kind, including but not limited to any trademark, copyright, patent, or trade secret.
+    \n\n
+        <b>Disclaimers</b>
+        \n\n
+The Company makes no warranties, express or implied, with regard to Ghost Call, including but not limited to warranties of merchantability or fitness for a particular purpose. The Company makes no warranties as to the availability, up-time, functionality, error-free nature or reliability of the Site or the Service, the Internet, the telephony network through which Ghost Call is utilized, or other technology utilized to present, access or utilize the Site or the Service, nor does it warrant that the Site or Service shall be free of computer viruses, malware or other malicious content.
+        \n\n
+        The Company reserves the right to modify, suspend or discontinue the offering of the Site and/or Service at any time for any reason without prior notice. Further, while Ghost Call utilizes electronic and physical security to reduce the risk of improper access to or manipulation of data during transmission and storage, it cannot guarantee the security or integrity of the data and shall have no liability for breaches of security or integrity or third-party interception in transit, nor for any damage which may result to your computer or other property by your use of the Site or Service.
+        \n\n
+        IN NO EVENT SHALL THE COMPANY BE LIABLE TO YOU FOR ANY DAMAGES, INCLUDING, BUT NOT LIMITED TO, DIRECT, CONSEQUENTIAL, INCIDENTAL OR INDIRECT DAMAGES, INCLUDING, WITHOUT LIMITATION, ANY LOSS OF DATA, LOSS OF PROFITS OR LOST SAVINGS, ARISING OUT OF THESE TERMS, THE SITE OR THE SERVICE, WHETHER OR NOT THE COMPANY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. FURTHER, IN NO EVENT SHALL THE COMPANY’S AGGREGATE LIABILITY FOR ANY REASON ARISING OUT OF THESE TERMS, THE SITE OR THE SERVICE FROM ALL CAUSES OF ACTION OF ANY KIND, INCLUDING CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY, BREACH OF WARRANTY, MISREPRESENTATION, OR OTHERWISE, EXCEED THE AMOUNT PAID BY YOU TO THE COMPANY FOR THE USE OF Ghost Call.
+        \n\n
+        The Site may include links to third party websites. Such links are provided for your convenience, and do not necessarily constitute an endorsement by the Company of such sites or an affiliation between the Company and the owners of such sites, nor shall the Company be liable for the contents of such sites. The Company will also not be liable for any errors in such links, or for any malfunction of such links.
+        \n\n
+        <b>Payments</b>
+        \n\n
+        PURCHASES OR REDEMPTIONS OF VIRTUAL TOKENS TO UTILIZE Ghost Call\'S PREMIUM SERVICES ARE NON-REFUNDABLE.
+        \n\n
+        The Company may at any time choose to utilize a payment system for Ghost Call. Your use of the Service is contingent on your paying in advance for such use, in the amounts and using the methods then-current on the Site. The Company will charge your indicated method of payment immediately upon your confirming the payment method and amount. Amounts to be charged may include sales and other taxes where applicable and any other amounts indicated on the Site. To the extent that you are responsible for any additional taxes or fees beyond those collected by the Company you agree that you will pay them when due.
+        \n\n
+        The Company shall not be responsible for any errors or transmission failures with regard to the charging and collection of funds from your indicated payment method, nor for any actions taken by the provider of the payment method you choose (which could include refusal to authorize the charge). In addition to these Terms, any payments made by you may be subject to the agreement between you and the provider of the payment method. As between you and the Company, you are responsible for all charges related to purchases made using your account and payment method, whether or not you authorized such purchases.
+        \n\n
+        <b>User Warranties</b>
+        \n\n
+        By using Ghost Call, you hereby warrant and represent that you have all necessary rights, power and authority to agree to these Terms and perform your obligations hereunder, and nothing contained in these Terms or in the performance of such obligations will place you in breach of any other contract or obligation. You further warrant and represent that you are and shall at all times remain in full compliance with all applicable laws and regulations with regard to your use of this Site and Service, including without limitation the Telephone Consumer Protection Act, the Telemarketing Sales Rule, the CAN-SPAM Act (Controlling the Assault of Non-Solicited Pornography and Marketing Act) of 2003, and all other laws and regulations concerning privacy, telemarketing and Internet marketing.
+        \n\n
+        <b>Indemnification</b>
+        \n\n
+        By using Ghost Call, you agree to indemnify and hold harmless the Company, its affiliates, assigns, contractors, officers, directors, employees and agents from and against any loss, claim, damage, obligation, liability, cost or expense (including, without limitation, reasonable attorneys. fees and costs of any investigation or preparation) arising out of or in connection with any actual or threatened claim, suit, action or proceeding by any person, entity or government agency based on or arising out of your breach of the above warranties or any use by you or an account or computer owned by you of Ghost Call or your provision of User Content to Ghost Call.
+        \n\n
+        <b>Governing Law; Forum</b>
+        \n\n
+        These Terms shall be governed by and interpreted in accordance with the laws of the State of New York, United States of America without regard to conflict of laws principles. You agree that the exclusive forum for any disputes arising out of these Terms and/or your use of the Site or Service shall be the state and federal courts located in New York, New York.
+        \n\n
+        <b>Other Provisions</b>
+        \n\n
+        The provisions regarding ownership; payments; warranties; and indemnification set forth above will survive any termination of these Terms. All notices to the Company shall be provided in writing, and any notice will be deemed to be given on the date it is received.
+        \n\n
+        If you have any questions or concerns about Ghost Call and it\'s Terms of Service, please feel free to Contact Us.
+    </string>
+
+    <string name="terms_n_conditions">
+        <b>WELCOME TO GHOST CALL!</b>
+        \n\n
+        <b>PLEASE READ OUR PRIVACY POLICY, DISCLAIMER AND TERMS AND CONDITIONS CAREFULLY, BY CLICKING ON THE ‘ACCEPT’ BUTTON BELOW, YOU HEREBY AGREE TO THE TERMS STATED HEREIN.</b>
+        \n\n
+        <b>PRIVACY POLICY</b>
+        \n\n
+        <b>1.INTRODUCTION</b>
+        \n
+        1.1 Ghost Call (“Company”) has created this Privacy Policy to inform users of its related mobile application which allows our users to obtain disposable phone numbers “Ghost Numbers” as a privacy layer, further enabling them to  use these Ghost Numbers to make calls, send SMS’s, mimic background sounds, allow for sound effects, voice changers, and record messages.
+        \n\n
+        1.2 We will take reasonable steps to protect user privacy consistent with the guidelines set forth in this Privacy Policy. In this Privacy Policy, “user” means any individual using the Company’s Mobile Application through installing, registering with us by creating an account, or participating in any other activities through Company
+        \n\n
+        <b>2.PERSONAL DATA</b>
+        \n
+        2.1 “Personal Data" means data that is personally identifiable to you, including your name, profile information, security information and Company Login ID, as well as any other non-public information about you that is associated with, or linked to, such data. When you create an account with us, we will collect your profile information.
+        \n
+        2.2 We may also collect certain personal information related to your subscription with Company We may collect the GPS data (i.e., location data) and the device information of the handheld mobile device on which the Company mobile application is installed. This information is partly used to provide you with location-based information to personalize your user experience, for marketing purposes Policy, and to improve the Mobile App. You expressly consent to our collection and use of your Information, as described above.
+        \n
+        2.3 Unless you have indicated otherwise in your account, we may send you communications (including e-mail, postal mail, phone, text/SMS, push notifications) that promote the use of our  Company services. These communications or push notifications may contain advertisements or coupons for products and services of other third parties ("Promotional Communications").
+        \n
+        2.4 You may indicate a preference to stop receiving further Promotional Communications from us. You will have the opportunity to "opt-out" by contacting us directly via our email below. You will need to indicate your profile name and ID. 
+        \n
+        <b>3.USER CONSENT</b>
+        \n
+        3.1 By submitting Personal Data through Company, you agree to the terms of this Privacy Policy and expressly consent to the processing of your Personal Data in accordance with this Privacy Policy.
+        \n\n
+        <b>4. TYPES OF DATA WE COLLECT</b>
+        \n
+        4.1 Company collects Personal Data and Anonymous Data from you when you use the App. 
+        \n\n
+        <b>5. HOW WE USE YOUR PERSONAL INFORMATION</b>
+        \n
+        5.1 The personal information we collect allows us to keep you posted on Company\'s latest product announcements, software updates, and upcoming events. If you don’t want to be on our mailing list, you can opt out anytime by updating your preferences.
+        \n\n
+        5.2 We also use personal information to help us create, develop, operate, deliver, and improve our products, services, content and advertising, and for loss prevention and anti-fraud purposes.
+        \n\n
+        5.3 We may use your personal information, including date of birth, to verify identity, assist with identification of users, and to determine appropriate services. For example, we may use date of birth to determine the age of account holders.
+        \n\n
+        5.4 From time to time, we may use your personal information to send important notices, such as communications about purchases and changes to our terms, conditions, and policies. Because this information is important to your interaction with Company you may not opt out of receiving these communications.
+        \n\n
+        <b>6. COOKIES OR CACHE DATA</b>
+        \n
+        6.1 Advertisers that display advertisements on Company\'s App. may also use cookies. We do not, however, have access to the information obtained from cookies issued from other sites.
+        \n\n
+        <b>7. ACQUISITIONS</b>
+        \n
+        7.1 If another company acquires our company or our assets, that company will thereafter possess the Personal Data collected by us, and will assume the rights and obligations regarding your Personal Data as described in this Privacy Policy.
+        \n\n
+        <b>8. GENERAL</b>
+        \n
+        <b>8.1 Application Privacy Policy</b>
+        \n
+        Company collects and stores information in a secure manner. However, you acknowledge there are security and privacy limitations which are beyond the control of the Company and that the security, integrity and privacy of any and all information and data exchanged between you and the Company through any app cannot be guaranteed. Company cannot fully eliminate security risks associated with Personal Data.
+        \n\n
+        <b>8.2 Links</b>
+        \n
+        Company\'s mobile application may contain advertisements and/or links to websites owned or operated by third parties. Such links are provided for your reference only, and Company has no responsibility or liability for the privacy practices or the content of those websites.
+        \n
+        This Privacy Policy applies solely to information collected by use of Company\'s mobile application.
+        \n\n
+        <b>8.3 Amendments</b>
+        \n
+        Company may modify or amend this Privacy Policy from time to time.
+        \n\n
+        <b>8.4 General Inquiries and Concerns</b>
+        \n
+        To submit a general inquiry or concern, please contact us at ghostcallnumber.com/contact with your user name and profile ID.
+        \n\n
+        <b>9. DISCLAIMER</b>
+        \n
+        <b>Please read our Disclaimer section.</b>
+        \n
+        YOUR USE OF THIS MOBILE APPLICATION IS AT YOUR OWN RISK. IF YOU ARE DISSATISFIED WITH THE MOBILE APPLICATION IN ANYWAY, OR UNHAPPY WITH THE CONTENT OR WITH THESE TERMS AND CONDITIONS, YOUR SOLE AND EXCLUSIVE REMEDY IS TO DISCONTINUE USING THE MOBILE APPLICATIONS.
+        \n\n
+        <b>10. Termination</b>
+        \n
+        Company reserves the right, in its sole discretion, to terminate your access to the all or part of the mobile applications, with or without notice, for any reason or no reason, including, without limitation, your violation of these Terms and Conditions.
+        \n\n
+        <b>11. Governing Law and Venue</b>
+        \n
+        By accessing and using this mobile application, you agree that your access and use is subject to these Terms and Conditions as well as applicable laws, as governed and interpreted pursuant to the laws of New York
+        \n\n
+        <b>12. Severability: Entire Agreement</b>
+        \n
+        If any part of this agreement is ruled to be unenforceable, then such part shall be limited or eliminated to the minimum extent necessary, with the remainder of agreement remaining in full force and effect. The Terms and Conditions constitute the entire agreement between Company and you, governing your use.
+        \n\n
+        <b>GHOST CALL</b>
+        \n
+        <b>TERMS AND CONDITIONS</b>
+        \n\n
+        IMPORTANT – READ CAREFULLY. YOUR USE OF GHOST CALL’S (“COMPANY”) MOBILE APPLICATION IS CONDITIONED UPON YOUR COMPLIANCE WITH, AND ACCEPTANCE OF, THE FOLLOWING AGREEMENT. YOU ACKNOWLEDGE AND AGREE THAT BY CLICKING ON THE ACCEPT BUTTON OR SIMILAR BUTTONS OR LINKS AS MAY BE DESIGNATED BY COMPANY YOU ARE ENTERING INTO A LEGALLY BINDING CONTRACT. YOU WILL NOT BE PERMITTED TO USE COMPANY’S MOBILE APPLICATION AND THE ASSOCIATED SERVICES UNLESS AND UNTIL YOU ACCEPT THIS AGREEMENT AND ANY OTHER RULES OR POLICIES THAT COMPANY MAY CREATE AND MAKE AVAILABLE ON ITS APPLICATION FROM TIME TO TIME.
+        \n\n
+        This is a legal agreement between you (“You”) and Company stating the terms that govern your use of the Company\'s mobile application (referred to in this agreement as the “App” or interchangeably as "the Services").
+        \n
+        a. Scope of Use: This App. is for IOS and Android users only. Your use of this app is for the purposes of obtaining disposable phone numbers “Ghost Numbers” as a privacy layer, in order to use these Ghost Numbers to make calls, send SMS’s, mimic background sounds, allow for sound effects, voice changers, among other things.
+        \n
+        b. Consent to Use of Data: You agree that Company  may collect and use technical data and related information, including but not limited to technical information about Your device, system and application software, and peripherals, that is gathered periodically to facilitate the provision of software updates, product support and other services to You (if any) related to the Services, Company may use this information, as long as it is in a form that does not personally identify You, to improve its products or to provide services or technologies to You.
+        \n
+        c. You understand that by using Company\'s Services, You shall not promote in any form, content that may be deemed offensive, indecent, or objectionable, which content may or may not be identified as having explicit language, and that the results of any search or entering of a particular URL may automatically and unintentionally generate links or references to objectionable material. Nevertheless, You agree to use the Services at Your sole risk and that Company shall not have any liability to You.
+        \n
+        d. Certain Services may display, include or make available content, data, information, applications or materials from third parties (“Third Party Materials”) or provide links to certain third party web sites. By using the Services, You acknowledge and agree that Company is not responsible for examining or evaluating the content, accuracy, completeness, timeliness, validity, copyright compliance, legality, decency, quality or any other aspect of such Third Party Materials or web sites. Company does not warrant or endorse and does not assume and will not have any liability or responsibility to You or any other person for any third-party Services, Third Party Materials or web sites, or for any other materials, products, or services of third parties. Third Party Materials and links to other web sites are provided solely as a convenience to You. Financial information displayed by any Services is for general informational purposes only and is not intended to be relied upon as investment advice. Before executing any securities transaction based upon information obtained through the Services, You should consult with a financial professional. Location data provided by any Services is for basic navigational purposes only and is not intended to be relied upon in situations where precise location information is needed or where erroneous, inaccurate or incomplete location data may lead to death, personal injury, property or environmental damage. Neither Company nor any of its content providers, guarantees the availability, accuracy, completeness, reliability, or timeliness of stock information or location data displayed by any Services.
+        \n
+        e. You agree that any Services contain proprietary content, information and material that is protected by applicable intellectual property and other laws, including but not limited to copyright, and that You will not use such proprietary content, information or materials in any way whatsoever except for permitted use of the Services. No portion of the Services may be reproduced in any form or by any means. You agree not to modify, rent, lease, loan, sell, distribute, or create derivative works based on the Services, in any manner, and You shall not exploit the Services in any unauthorized way whatsoever, including but not limited to, by trespass or burdening network capacity. You further agree not to use the Services in any manner to harass, abuse, stalk, threaten, defame or otherwise infringe or violate the rights of any other party, and that Company is not in any way responsible for any such use by You, nor for any harassing, threatening, defamatory, offensive or illegal messages or transmissions that You may receive as a result of using any of the Services.
+        \n
+        f. Company shall not liable for any data that might be breached or hacked as a result of using this application. By accepting this Agreement, You hereby agree not to record conversations made in the following states: CA, PA, FL, IL, MI, WA, MD, MA, CT, NV, NH or MT.Company shall not liable for any numbers that might be lost due to technical difficulties as numbers, SMS and Calling are conducted through a third party service Credits obtained from this Application do not have a dollar value, and all purchases are final
+        \n
+        g. In addition, third party Services and Third Party Materials that may be accessed from, displayed on or linked to from the mobile device are not available in all languages or in all countries. Company makes no representation that such Services and Materials are appropriate or available for use in any particular location. To the extent You choose to access such Services or Third Party Materials, You do so at Your own initiative and are responsible for compliance with any applicable laws, including but not limited to applicable local laws. Company, and its licensors, reserve the right to change, suspend, remove, or disable access to any Services at any time without notice. In no event will Company be liable for the removal of or disabling of access to any such Services. Company may also impose limits on the use of or access to certain Services, in any case and without notice or liability.
+        \n
+        h. Limitation of Liability. TO THE EXTENT NOT PROHIBITED BY LAW, IN NO EVENT SHALL COMPANY BE LIABLE FOR PERSONAL INJURY, OR ANY INCIDENTAL, SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES WHATSOEVER, INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF PROFITS, LOSS OF DATA, BUSINESS INTERRUPTION OR ANY OTHER COMMERCIAL DAMAGES OR LOSSES, ARISING OUT OF OR RELATED TO YOUR USE OR INABILITY TO USE THE LICENSED APPLICATION, HOWEVER CAUSED, REGARDLESS OF THE THEORY OF LIABILITY (CONTRACT, TORT OR OTHERWISE) AND EVEN IF COMPANY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. SOME JURISDICTIONS DO NOT ALLOW THE LIMITATION OF LIABILITY FOR PERSONAL INJURY, OR OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS LIMITATION MAY NOT APPLY TO YOU. In no event shall Company’s total liability to you for all damages (other than as may be required by applicable law in cases involving personal injury) exceed the amount of fifty dollars ($50.00). The foregoing limitations will apply even if the above stated remedy fails of its essential purpose.
+        \n
+        h. The laws of the State of New York, excluding its conflicts of law rules, govern your use of this App .
+</string>
+
+    <string name="number_one">1</string>
+    <string name="number_two">2</string>
+    <string name="number_three">3</string>
+    <string name="number_four">4</string>
+    <string name="number_five">5</string>
+    <string name="number_six">6</string>
+    <string name="number_seven">7</string>
+    <string name="number_eight">8</string>
+    <string name="number_nine">9</string>
+    <string name="number_zero">0</string>
+    <string name="lock_ghostcall">LOCK GHOSTCALL</string>
+    <string name="unlock_ghostcall">UNLOCK GHOSTCALL</string>
+    <string name="locking_ghostcall">Locking GhostCall will require you to enter pin code to access the app</string>
+    <string name="start">START</string>
+
+</resources>
